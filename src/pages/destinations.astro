@@ -1,0 +1,152 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const destinations = [
+  {
+    country: "India",
+    places: [
+      { name: "Jaipur, Rajasthan", description: "The Pink City with its magnificent palaces, vibrant markets, and rich cultural heritage." },
+      { name: "Goa", description: "Beautiful beaches, Portuguese architecture, and a laid-back atmosphere perfect for relaxation." },
+      { name: "Rishikesh, Uttarakhand", description: "Spiritual center nestled in the Himalayas, famous for yoga, meditation, and adventure sports." },
+      { name: "Ladakh", description: "High-altitude desert with breathtaking landscapes, Buddhist monasteries, and unique culture." }
+    ]
+  },
+  {
+    country: "Thailand",
+    places: [
+      { name: "Bangkok", description: "Vibrant capital with ornate temples, bustling markets, and a perfect blend of tradition and modernity." },
+      { name: "Chiang Mai", description: "Mountain city known for its temples, night markets, and elephant sanctuaries." },
+      { name: "Koh Phi Phi", description: "Stunning island paradise with limestone cliffs, crystal-clear waters, and vibrant marine life." }
+    ]
+  },
+  {
+    country: "Vietnam",
+    places: [
+      { name: "Hanoi", description: "Historic capital with French colonial architecture, vibrant street food scene, and rich cultural heritage." },
+      { name: "Ha Long Bay", description: "UNESCO World Heritage site featuring thousands of limestone karsts and isles in various shapes and sizes." },
+      { name: "Hoi An", description: "Ancient town known for its well-preserved architecture, colorful lanterns, and tailor shops." }
+    ]
+  },
+  {
+    country: "Nepal",
+    places: [
+      { name: "Kathmandu", description: "Ancient city with historic temples, bustling markets, and gateway to the Himalayas." },
+      { name: "Pokhara", description: "Lakeside city with stunning mountain views, perfect base for trekking adventures." },
+      { name: "Annapurna Circuit", description: "One of the world's classic treks, offering diverse landscapes and cultural experiences." }
+    ]
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Destinations | ${SITE_TITLE}`} description="Curated guides to remarkable places around the world" />
+		<style>
+			.content-container {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+			.page-title {
+				margin-bottom: 0.5em;
+				font-size: 1.8em;
+				font-weight: 500;
+			}
+			.intro {
+				margin-bottom: 2.5em;
+				color: var(--text-secondary);
+				font-family: Georgia, serif;
+			}
+			.country {
+				margin-bottom: 3em;
+			}
+			.country-title {
+				margin-bottom: 1.2em;
+				font-size: 1.4em;
+				font-weight: 500;
+				color: var(--text-color);
+				padding-bottom: 0.5em;
+				border-bottom: 1px solid var(--border-color);
+			}
+			.places {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1.8em;
+			}
+			.place-card {
+				background: var(--card-bg);
+				border-radius: 8px;
+				padding: 1.5em;
+				box-shadow: var(--box-shadow);
+				transition: transform 0.2s ease;
+			}
+			.place-card:hover {
+				transform: translateY(-3px);
+			}
+			.place-name {
+				font-size: 1.2em;
+				margin: 0 0 0.5em 0;
+				color: var(--text-color);
+				font-weight: 500;
+			}
+			.place-card p {
+				font-family: Georgia, serif;
+				margin-bottom: 0;
+			}
+			.coming-soon {
+				margin-top: 3em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--border-color);
+			}
+			.coming-soon h2 {
+				margin-bottom: 0.5em;
+				font-size: 1.4em;
+				font-weight: 500;
+			}
+			.coming-soon p {
+				color: var(--text-secondary);
+				font-family: Georgia, serif;
+			}
+			
+			@media (min-width: 640px) {
+				.places {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="content-container">
+				<h1 class="page-title">Destination Guides</h1>
+				<p class="intro">
+					Places I've explored during my travels since 2016, with personal insights and recommendations.
+				</p>
+
+				{destinations.map(country => (
+					<section class="country">
+						<h2 class="country-title" id={country.country.toLowerCase().replace(/\s+/g, '-')}>{country.country}</h2>
+						<div class="places">
+							{country.places.map(place => (
+								<div class="place-card">
+									<h3 class="place-name">{place.name}</h3>
+									<p>{place.description}</p>
+								</div>
+							))}
+						</div>
+					</section>
+				))}
+
+				<div class="coming-soon">
+					<h2>More Destinations Coming Soon</h2>
+					<p>I'm constantly exploring new places and will be adding more destinations from my travels across Southeast Asia and beyond.</p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

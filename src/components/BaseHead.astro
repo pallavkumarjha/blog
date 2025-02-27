@@ -1,0 +1,136 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import '../styles/global.css';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
+
+interface Props {
+	title: string;
+	description: string;
+	image?: string;
+	article?: boolean;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { 
+	title, 
+	description, 
+	image = '/blog-placeholder-1.jpg',
+	article = false
+} = Astro.props;
+
+// Generate full image URL
+const imageUrl = new URL(image, Astro.site).toString();
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title={SITE_TITLE}
+	href={new URL('rss.xml', Astro.site)}
+/>
+<meta name="generator" content={Astro.generator} />
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="author" content="Wanderlust Journal" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={article ? 'article' : 'website'} />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:site_name" content={SITE_TITLE} />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={imageUrl} />
+<meta name="twitter:creator" content="@wanderlustjournal" />
+
+<!-- Theme color for browser -->
+<meta name="theme-color" content="#ff5a5f" />
+
+<!-- Script to apply saved theme before page load to prevent flash -->
+<script is:inline>
+	// Check for saved theme preference or use the system preference
+	const theme = localStorage.getItem('theme') || 
+		(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+	
+	// Apply theme immediately to prevent flash
+	if (theme === 'dark') {
+		document.documentElement.classList.add('dark-theme');
+	}
+</script>
+
+<!-- Structured Data for Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wanderlust Journal",
+  "url": "${SITE_URL}",
+  "logo": "${new URL('/favicon.svg', Astro.site)}",
+  "description": "${SITE_DESCRIPTION}"
+}
+</script>
+
+<!-- Structured Data for Website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "${SITE_TITLE}",
+  "url": "${SITE_URL}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "${SITE_URL}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{article && (
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "image": imageUrl,
+  "datePublished": Astro.props.pubDate ? new Date(Astro.props.pubDate).toISOString() : new Date().toISOString(),
+  "dateModified": Astro.props.updatedDate ? new Date(Astro.props.updatedDate).toISOString() : new Date().toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": "Wanderlust Journal Author"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wanderlust Journal",
+    "logo": {
+      "@type": "ImageObject",
+      "url": new URL('/favicon.svg', Astro.site).toString()
+    }
+  },
+  "description": description
+})}>
+</script>
+)}

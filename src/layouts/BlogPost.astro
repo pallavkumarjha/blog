@@ -1,0 +1,104 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} image={heroImage} article={true} />
+		<style>
+			main {
+				width: 100%;
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 2em 1em 4em;
+			}
+			article {
+				margin-top: 1em;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.hero-image {
+				margin: 1.5em 0 2em;
+			}
+			.hero-image img {
+				display: block;
+				width: 100%;
+				max-height: 500px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+			.prose {
+				width: 100%;
+				margin: auto;
+				font-size: 1.05em;
+				font-family: Georgia, serif;
+				color: var(--text-color);
+			}
+			.title {
+				margin-bottom: 1.5em;
+			}
+			.title h1 {
+				margin: 0 0 0.2em 0;
+				line-height: 1.2;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+				font-weight: 500;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: var(--text-secondary);
+				font-size: 0.9em;
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+			@media (max-width: 720px) {
+				.prose {
+					font-size: 1em;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article itemscope itemtype="https://schema.org/BlogPosting">
+				<div class="prose">
+					<div class="title">
+						<h1 itemprop="headline">{title}</h1>
+						<div class="date">
+							<span itemprop="datePublished">
+								<FormattedDate date={pubDate} />
+							</span>
+							{
+								updatedDate && (
+									<span class="last-updated-on" itemprop="dateModified">
+										· Updated: <FormattedDate date={updatedDate} />
+									</span>
+								)
+							}
+						</div>
+					</div>
+				</div>
+				{heroImage && 
+					<div class="hero-image">
+						<img src={heroImage} alt={title} itemprop="image" />
+					</div>
+				}
+				<div class="prose" itemprop="articleBody">
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

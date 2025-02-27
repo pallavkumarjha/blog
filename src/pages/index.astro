@@ -1,0 +1,131 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0, 4); // Get only the 4 most recent posts
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<meta name="keywords" content={KEYWORDS} />
+		<style>
+			.intro {
+				margin-bottom: 3em;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.intro h1 {
+				margin-bottom: 0.3em;
+				font-size: 2em;
+				font-weight: 500;
+			}
+			.intro p {
+				color: var(--text-secondary);
+				margin-bottom: 0;
+				font-size: 1.05em;
+				max-width: 42em;
+			}
+			.section-title {
+				margin: 2em 0 1em 0;
+				font-size: 1.4em;
+				font-weight: 500;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.post-list {
+				display: flex;
+				flex-direction: column;
+				gap: 2em;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.post-item {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+				padding-bottom: 2em;
+				border-bottom: 1px solid var(--border-color);
+			}
+			.post-item:hover .title {
+				color: var(--accent);
+			}
+			.post-content {
+				display: flex;
+				flex-direction: column;
+				gap: 0.3em;
+			}
+			.title {
+				margin: 0;
+				color: var(--text-color);
+				line-height: 1.2;
+				font-size: 1.4em;
+				font-weight: 500;
+				transition: color 0.2s ease;
+			}
+			.date {
+				margin: 0;
+				color: var(--text-secondary);
+				font-size: 0.85em;
+			}
+			.description {
+				margin: 0.5em 0 0 0;
+				font-family: Georgia, serif;
+				color: var(--text-color);
+			}
+			.view-all {
+				display: inline-block;
+				margin-top: 2em;
+				color: var(--accent);
+				font-size: 0.9em;
+				text-decoration: none;
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.view-all:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="intro">
+				<h1>{SITE_TITLE}</h1>
+				<p>{SITE_DESCRIPTION}</p>
+			</section>
+
+			<section>
+				<h2 class="section-title">Latest Entries</h2>
+				<div class="post-list">
+					{
+						posts.map((post) => (
+							<a href={`/blog/${post.id}/`} class="post-item" aria-label={`Read article: ${post.data.title}`}>
+								<div class="post-content">
+									<h3 class="title">{post.data.title}</h3>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+									<p class="description">{post.data.description}</p>
+								</div>
+							</a>
+						))
+					}
+				</div>
+				<a href="/blog" class="view-all" aria-label="View all articles">See all articles →</a>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

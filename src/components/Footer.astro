@@ -1,0 +1,41 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="content">
+		<p>&copy; {today.getFullYear()} Wanderlust Journal</p>
+		<div class="footer-links">
+			<a href="/privacy" aria-label="Privacy Policy">Privacy</a>
+			<span class="separator">·</span>
+			<a href="/contact" aria-label="Contact Us">Contact</a>
+		</div>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 0;
+		border-top: 1px solid var(--border-color);
+		color: var(--text-secondary);
+		font-size: 0.9em;
+	}
+	.content {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 1em;
+		text-align: center;
+	}
+	.footer-links {
+		margin-top: 0.5em;
+	}
+	.footer-links a {
+		color: var(--text-secondary);
+		text-decoration: none;
+	}
+	.footer-links a:hover {
+		color: var(--accent);
+	}
+	.separator {
+		margin: 0 0.5em;
+	}
+</style>

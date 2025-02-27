@@ -1,0 +1,171 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const tips = [
+  {
+    category: "Planning & Preparation",
+    items: [
+      { title: "Research with Purpose", content: "Invest time in understanding local customs, seasonal weather patterns, and cultural events before finalizing your itinerary." },
+      { title: "Strategic Accommodation Booking", content: "Secure lodging 3-6 months in advance for high season travel, focusing on location and authentic experiences rather than just amenities." },
+      { title: "Balanced Itinerary Design", content: "Create a framework of key activities while allowing 30-40% of your schedule to remain flexible for spontaneous discoveries." }
+    ]
+  },
+  {
+    category: "Packing Essentials",
+    items: [
+      { title: "Capsule Wardrobe Approach", content: "Select versatile clothing in complementary colors that can be layered and mixed to create multiple outfits from minimal pieces." },
+      { title: "Document Security Protocol", content: "Maintain digital and physical copies of essential documents, distributed across separate locations and cloud storage." },
+      { title: "Minimalist Toiletry Strategy", content: "Opt for concentrated, multi-purpose products and solid alternatives that conserve space and comply with airline restrictions." }
+    ]
+  },
+  {
+    category: "Cultural Navigation",
+    items: [
+      { title: "Language Essentials", content: "Master 8-10 key phrases in the local language, focusing on greetings, gratitude expressions, and basic needs." },
+      { title: "Hydration Discipline", content: "Establish a consistent water intake routine, particularly in unfamiliar climates where dehydration can occur unexpectedly." },
+      { title: "Local Transportation Immersion", content: "Embrace public transit systems as both cost-effective travel and authentic cultural experiences that reveal daily life patterns." }
+    ]
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Travel Guide | ${SITE_TITLE}`} description="Practical wisdom for meaningful travel experiences" />
+		<style>
+			.content-container {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+			.page-title {
+				margin-bottom: 0.5em;
+				font-size: 1.8em;
+				font-weight: 500;
+			}
+			.intro {
+				margin-bottom: 2.5em;
+				color: var(--text-secondary);
+				font-family: Georgia, serif;
+			}
+			.tip-category {
+				margin-bottom: 3em;
+			}
+			.category-title {
+				margin-bottom: 1.2em;
+				font-size: 1.4em;
+				font-weight: 500;
+				color: var(--text-color);
+				padding-bottom: 0.5em;
+				border-bottom: 1px solid var(--border-color);
+			}
+			.tips-list {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1.8em;
+			}
+			.tip-item {
+				background: var(--card-bg);
+				border-radius: 8px;
+				padding: 1.5em;
+				box-shadow: var(--box-shadow);
+				transition: transform 0.2s ease;
+			}
+			.tip-item:hover {
+				transform: translateY(-3px);
+			}
+			.tip-title {
+				font-size: 1.2em;
+				margin: 0 0 0.5em 0;
+				color: var(--text-color);
+				font-weight: 500;
+			}
+			.tip-item p {
+				font-family: Georgia, serif;
+				margin-bottom: 0;
+			}
+			.newsletter {
+				margin-top: 3em;
+				padding-top: 1.5em;
+				border-top: 1px solid var(--border-color);
+			}
+			.newsletter h2 {
+				margin-bottom: 0.5em;
+				font-size: 1.4em;
+				font-weight: 500;
+			}
+			.newsletter p {
+				margin-bottom: 1.5em;
+				color: var(--text-secondary);
+				font-family: Georgia, serif;
+			}
+			.newsletter-form {
+				display: flex;
+				max-width: 400px;
+			}
+			.newsletter-input {
+				flex: 1;
+				padding: 0.8em 1em;
+				border: 1px solid var(--border-color);
+				border-radius: 4px 0 0 4px;
+				font-size: 0.9rem;
+				background: var(--input-bg);
+				color: var(--text-color);
+			}
+			.newsletter-button {
+				background-color: var(--accent);
+				color: white;
+				border: none;
+				padding: 0 1.2em;
+				border-radius: 0 4px 4px 0;
+				font-size: 0.9rem;
+				cursor: pointer;
+				font-weight: 400;
+			}
+			
+			@media (min-width: 640px) {
+				.tips-list {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="content-container">
+				<h1 class="page-title">Travel Guide</h1>
+				<p class="intro">
+					Practical wisdom and thoughtful advice for creating meaningful travel experiences.
+				</p>
+
+				{tips.map(category => (
+					<section class="tip-category">
+						<h2 class="category-title" id={category.category.toLowerCase().replace(/\s+/g, '-').replace(/[&]/g, 'and')}>{category.category}</h2>
+						<div class="tips-list">
+							{category.items.map(tip => (
+								<div class="tip-item">
+									<h3 class="tip-title">{tip.title}</h3>
+									<p>{tip.content}</p>
+								</div>
+							))}
+						</div>
+					</section>
+				))}
+
+				<div class="newsletter">
+					<h2>Curated Travel Insights</h2>
+					<p>Subscribe to receive carefully crafted travel wisdom and exclusive guides delivered to your inbox.</p>
+					<form class="newsletter-form" aria-label="Newsletter subscription form">
+						<input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Your email address" />
+						<button type="submit" class="newsletter-button">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

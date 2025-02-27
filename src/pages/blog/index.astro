@@ -1,0 +1,97 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Articles | ${SITE_TITLE}`} description="Travel narratives and reflections from around the world" />
+		<style>
+			.content-container {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+			.page-title {
+				margin-bottom: 0.5em;
+				font-size: 1.8em;
+				font-weight: 500;
+			}
+			.page-description {
+				color: var(--text-secondary);
+				margin-bottom: 2.5em;
+				font-family: Georgia, serif;
+			}
+			.post-list {
+				display: flex;
+				flex-direction: column;
+				gap: 2em;
+			}
+			.post-item {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+				padding-bottom: 2em;
+				border-bottom: 1px solid var(--border-color);
+			}
+			.post-item:hover .title {
+				color: var(--accent);
+			}
+			.post-content {
+				display: flex;
+				flex-direction: column;
+				gap: 0.3em;
+			}
+			.title {
+				margin: 0;
+				color: var(--text-color);
+				line-height: 1.2;
+				font-size: 1.4em;
+				font-weight: 500;
+				transition: color 0.2s ease;
+			}
+			.date {
+				margin: 0;
+				color: var(--text-secondary);
+				font-size: 0.85em;
+			}
+			.description {
+				margin: 0.5em 0 0 0;
+				font-family: Georgia, serif;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="content-container">
+				<h1 class="page-title">Travel Articles</h1>
+				<p class="page-description">Personal narratives and reflections from journeys near and far</p>
+				<section class="post-list">
+					{
+						posts.map((post) => (
+							<a href={`/blog/${post.id}/`} class="post-item" aria-label={`Read article: ${post.data.title}`}>
+								<div class="post-content">
+									<h2 class="title">{post.data.title}</h2>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+									<p class="description">{post.data.description}</p>
+								</div>
+							</a>
+						))
+					}
+				</section>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
