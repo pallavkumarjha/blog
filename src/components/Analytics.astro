@@ -8,3 +8,29 @@
     data-website-id="c7e9aed4-5312-4fde-9d64-3701a40e9bd2"
     src="https://cloud.umami.is/script.js"
 ></script>
+
+<script>
+    // Track page views and navigation
+    document.addEventListener('astro:page-load', () => {
+        // Track page view with current path
+        const currentPath = window.location.pathname;
+        umami.track('page_view', { path: currentPath });
+
+        // Track article reads when on blog posts
+        if (currentPath.startsWith('/blog/')) {
+            let hasReached = false;
+            window.addEventListener('scroll', () => {
+                if (!hasReached) {
+                    const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+                    if (scrollPercent > 70) {
+                        umami.track('article_read', { 
+                            article: currentPath,
+                            title: document.title
+                        });
+                        hasReached = true;
+                    }
+                }
+            });
+        }
+    });
+</script>

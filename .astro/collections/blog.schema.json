@@ -10,6 +10,14 @@
         "description": {
           "type": "string"
         },
+        "series": {
+          "type": "string",
+          "description": "The name of the series this post belongs to"
+        },
+        "seriesOrder": {
+          "type": "integer",
+          "description": "The order of this post within its series"
+        },
         "pubDate": {
           "anyOf": [
             {
