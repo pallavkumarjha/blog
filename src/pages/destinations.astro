@@ -4,197 +4,288 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE } from '../consts';
 
+// Client-side search and show more functionality
 const destinations = [
-  {
-    country: "India",
-    places: [
-      // Rajasthan Circuit
-      { name: "Jaipur", description: "The Pink City with its magnificent palaces, vibrant markets, and rich cultural heritage." },
-      { name: "Jodhpur", description: "The Blue City famous for its mighty Mehrangarh Fort and vibrant old city streets." },
-      { name: "Udaipur", description: "The City of Lakes with its romantic palaces, serene lakes, and rich Rajasthani culture." },
-      { name: "Jaisalmer", description: "The Golden City with its living fort, desert safaris, and stunning Rajasthani architecture." },
-      { name: "Pushkar", description: "Sacred town known for its holy lake, Brahma Temple, and annual camel fair." },
-      { name: "Bikaner", description: "Historic city known for its magnificent forts, temples, and traditional cuisine." },
-      { name: "Mount Abu", description: "Rajasthan's only hill station offering stunning views and Dilwara Jain Temples." },
-      { name: "Bhangarh", description: "Historical ruins known for its archaeological heritage and mysterious legends." },
-      { name: "Ajmer", description: "Spiritual city home to the famous Ajmer Sharif Dargah and ancient architecture." },
+    {
+        country: "India",
+        places: [
+            // Rajasthan Circuit
+            { name: "🏰 Jaipur", description: "The Pink City with its magnificent palaces, vibrant markets, and rich cultural heritage." },
+            { name: "🏛️ Jodhpur", description: "The Blue City famous for its mighty Mehrangarh Fort and vibrant old city streets." },
+            { name: "🏯 Udaipur", description: "The City of Lakes with its romantic palaces, serene lakes, and rich Rajasthani culture." },
+            { name: "🐪 Jaisalmer", description: "The Golden City with its living fort, desert safaris, and stunning Rajasthani architecture." },
+            { name: "⛩️ Pushkar", description: "Sacred town known for its holy lake, Brahma Temple, and annual camel fair." },
+            { name: "🏛️ Bikaner", description: "Historic city known for its magnificent forts, temples, and traditional cuisine." },
+            { name: "⛰️ Mount Abu", description: "Rajasthan's only hill station offering stunning views and Dilwara Jain Temples." },
+            { name: "🏛️ Bhangarh", description: "Historical ruins known for its archaeological heritage and mysterious legends." },
+            { name: "🕌 Ajmer", description: "Spiritual city home to the famous Ajmer Sharif Dargah and ancient architecture." },
 
-      // Himalayan & Northern Circuit
-      { name: "Nag Tibba", description: "Popular weekend trek near Mussoorie offering panoramic views of Himalayan peaks." },
-      { name: "Haridwar", description: "Ancient holy city on the Ganges, famous for its evening Ganga Aarti and spiritual significance." },
-      { name: "Rishikesh", description: "World's yoga capital with adventure sports, spiritual retreats, and the sacred Ganges." },
-      { name: "Chandrashila/Tungnath", description: "Highest Shiva temple trek offering spectacular views of Himalayan ranges." },
-      { name: "Mussoorie", description: "Queen of Hills with colonial charm, mountain views, and pleasant weather." },
-      { name: "Jalandhar", description: "Historic city in Punjab known for its sports industry and cultural heritage." },
+            // Himalayan & Northern Circuit
+            { name: "🗻 Nag Tibba", description: "Popular weekend trek near Mussoorie offering panoramic views of Himalayan peaks." },
+            { name: "🕉️ Haridwar", description: "Ancient holy city on the Ganges, famous for its evening Ganga Aarti and spiritual significance." },
+            { name: "🧘 Rishikesh", description: "World's yoga capital with adventure sports, spiritual retreats, and the sacred Ganges." },
+            { name: "⛰️ Chandrashila/Tungnath", description: "Highest Shiva temple trek offering spectacular views of Himalayan ranges." },
+            { name: "🏔️ Mussoorie", description: "Queen of Hills with colonial charm, mountain views, and pleasant weather." },
+            { name: "🏛️ Jalandhar", description: "Historic city in Punjab known for its sports industry and cultural heritage." },
 
-      // Himachal & Northern Circuit
-      { name: "Dalhousie", description: "Colonial-era hill station with panoramic views of the Himalayas and pine valleys." },
-      { name: "Triund", description: "Popular trek offering breathtaking views of the Dhauladhar range." },
-      { name: "Shimla", description: "Former summer capital of British India with colonial architecture and mountain charm." },
-      { name: "Kheerganga", description: "Scenic trek leading to natural hot springs amidst the Parvati Valley." },
-      { name: "Chitkul", description: "India's last inhabited village near the Indo-Tibet border with stunning mountain views." },
+            // Himachal & Northern Circuit
+            { name: "🏔️ Dalhousie", description: "Colonial-era hill station with panoramic views of the Himalayas and pine valleys." },
+            { name: "⛰️ Triund", description: "Popular trek offering breathtaking views of the Dhauladhar range." },
+            { name: "🏛️ Shimla", description: "Former summer capital of British India with colonial architecture and mountain charm." },
+            { name: "♨️ Kheerganga", description: "Scenic trek leading to natural hot springs amidst the Parvati Valley." },
+            { name: "🏔️ Chitkul", description: "India's last inhabited village near the Indo-Tibet border with stunning mountain views." },
 
-      // Kerala & Southern Circuit
-      { name: "Kochi", description: "Historic coastal city with Chinese fishing nets, colonial architecture, and vibrant culture." },
-      { name: "Alleppey", description: "Venice of the East known for its backwaters, houseboats, and serene canals." },
-      { name: "Munnar", description: "Hill station surrounded by rolling hills and vast tea plantations." },
-      { name: "Kanyakumari", description: "India's southernmost tip where three oceans meet, famous for stunning sunrises and sunsets." },
+            // Kerala & Southern Circuit
+            { name: "⛵ Kochi", description: "Historic coastal city with Chinese fishing nets, colonial architecture, and vibrant culture." },
+            { name: "🚣 Alleppey", description: "Venice of the East known for its backwaters, houseboats, and serene canals." },
+            { name: "🌿 Munnar", description: "Hill station surrounded by rolling hills and vast tea plantations." },
+            { name: "🌊 Kanyakumari", description: "India's southernmost tip where three oceans meet, famous for stunning sunrises and sunsets." },
 
-      // Karnataka & Coastal Circuit
-      { name: "Gokarna", description: "Temple town with pristine beaches and laid-back atmosphere." },
-      { name: "Mangalore", description: "Coastal city known for its beaches, temples, and unique cuisine." },
-      { name: "Udupi", description: "Temple town famous for its Krishna Temple and South Indian cuisine." },
-      { name: "Mulki", description: "Coastal town known for its serene beaches and water sports." },
+            // Karnataka & Coastal Circuit
+            { name: "🏖️ Gokarna", description: "Temple town with pristine beaches and laid-back atmosphere." },
+            { name: "🌊 Mangalore", description: "Coastal city known for its beaches, temples, and unique cuisine." },
+            { name: "🕉️ Udupi", description: "Temple town famous for its Krishna Temple and South Indian cuisine." },
+            { name: "🏊 Mulki", description: "Coastal town known for its serene beaches and water sports." },
 
-      // Maharashtra Circuit
-      { name: "Mumbai", description: "India's financial capital with colonial heritage, bustling markets, and vibrant culture." },
-      { name: "Pune", description: "Cultural capital of Maharashtra with historic Maratha heritage and modern lifestyle." },
-      { name: "Panchgani", description: "Hill station known for its scenic table land and strawberry farms." },
-      { name: "Mahabaleshwar", description: "Popular hill station with panoramic viewpoints and strawberry gardens." },
+            // Maharashtra Circuit
+            { name: "🌆 Mumbai", description: "India's financial capital with colonial heritage, bustling markets, and vibrant culture." },
+            { name: "🏛️ Pune", description: "Cultural capital of Maharashtra with historic Maratha heritage and modern lifestyle." },
+            { name: "⛰️ Panchgani", description: "Hill station known for its scenic table land and strawberry farms." },
+            { name: "🏔️ Mahabaleshwar", description: "Popular hill station with panoramic viewpoints and strawberry gardens." },
 
-      // Other Major Cities
-      { name: "Delhi", description: "India's capital with blend of historical monuments and modern infrastructure." },
-      { name: "Agra", description: "Home to the iconic Taj Mahal and other Mughal architectural marvels." },
-      { name: "Varanasi", description: "Ancient holy city on the banks of Ganges with rich spiritual heritage." },
-      { name: "Hyderabad", description: "City of Nizams known for its historic monuments and tech hub." },
-      { name: "Bangalore", description: "India's Silicon Valley with pleasant weather and modern lifestyle." },
-      { name: "Amritsar", description: "Home to the Golden Temple and rich Punjabi culture." },
-      { name: "Pondicherry", description: "Former French colony with colonial architecture and spiritual atmosphere." }
-    ]
-  },
-  {
-    country: "Thailand",
-    places: [
-      { name: "Bangkok", description: "Vibrant capital with ornate temples, bustling markets, and a perfect blend of tradition and modernity." },
-      { name: "Chiang Mai", description: "Mountain city known for its temples, night markets, and elephant sanctuaries." },
-      { name: "Koh Phi Phi", description: "Stunning island paradise with limestone cliffs, crystal-clear waters, and vibrant marine life." }
-    ]
-  },
-  {
-    country: "Vietnam",
-    places: [
-      { name: "Hanoi", description: "Historic capital with French colonial architecture, vibrant street food scene, and rich cultural heritage." },
-      { name: "Ha Long Bay", description: "UNESCO World Heritage site featuring thousands of limestone karsts and isles in various shapes and sizes." },
-      { name: "Hoi An", description: "Ancient town known for its well-preserved architecture, colorful lanterns, and tailor shops." }
-    ]
-  },
-  {
-    country: "Nepal",
-    places: [
-      { name: "Kathmandu", description: "Ancient city with historic temples, bustling markets, and gateway to the Himalayas." },
-      { name: "Pokhara", description: "Lakeside city with stunning mountain views, perfect base for trekking adventures." },
-      { name: "Annapurna Circuit", description: "One of the world's classic treks, offering diverse landscapes and cultural experiences." }
-    ]
-  }
+            // Other Major Cities
+            { name: "🏛️ Delhi", description: "India's capital with blend of historical monuments and modern infrastructure." },
+            { name: "🕌 Agra", description: "Home to the iconic Taj Mahal and other Mughal architectural marvels." },
+            { name: "🕉️ Varanasi", description: "Ancient holy city on the banks of Ganges with rich spiritual heritage." },
+            { name: "🕌 Hyderabad", description: "City of Nizams known for its historic monuments and tech hub." },
+            { name: "🌆 Bangalore", description: "India's Silicon Valley with pleasant weather and modern lifestyle." },
+            { name: "🕉️ Amritsar", description: "Home to the Golden Temple and rich Punjabi culture." },
+            { name: "🏛️ Pondicherry", description: "Former French colony with colonial architecture and spiritual atmosphere." }
+        ]
+    },
+    {
+        country: "Singapore",
+        places: [
+            { name: "🌆 Marina Bay", description: "Iconic waterfront district with Gardens by the Bay, Marina Bay Sands, and stunning city views." },
+            { name: "🏮 Chinatown", description: "Historic district with temples, traditional shophouses, and diverse culinary scene." },
+            { name: "🛍️ Orchard Road", description: "Premier shopping district with modern malls, boutiques, and entertainment venues." },
+            { name: "🕉️ Little India", description: "Vibrant neighborhood with Indian culture, temples, and authentic cuisine." }
+        ]
+    },
+    {
+        country: "Malaysia",
+        places: [
+            { name: "🌆 Kuala Lumpur", description: "Modern capital with iconic Petronas Towers, diverse culture, and excellent food scene." },
+            { name: "⛰️ Batu Caves", description: "Limestone caves and Hindu temple complex with massive golden statue and monkeys." },
+            { name: "🏮 Petaling Street", description: "Historic Chinatown area with street food, markets, and cultural heritage." },
+            { name: "🌳 KLCC Park", description: "Urban park with jogging trails, lake, and stunning views of the Petronas Towers." }
+        ]
+    }
 ];
+
+// Calculate total destinations visited
+const totalDestinations = destinations.reduce((acc, country) => acc + country.places.length, 0);
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={`Destinations | ${SITE_TITLE}`} description="Curated guides to remarkable places around the world" />
-		<style>
-			.content-container {
-				max-width: 700px;
-				margin: 0 auto;
-			}
-			.page-title {
-				margin-bottom: 0.5em;
-				font-size: 1.8em;
-				font-weight: 500;
-			}
-			.intro {
-				margin-bottom: 2.5em;
-				color: var(--text-secondary);
-				font-family: Georgia, serif;
-			}
-			.country {
-				margin-bottom: 3em;
-			}
-			.country-title {
-				margin-bottom: 1.2em;
-				font-size: 1.4em;
-				font-weight: 500;
-				color: var(--text-color);
-				padding-bottom: 0.5em;
-				border-bottom: 1px solid var(--border-color);
-			}
-			.places {
-				display: grid;
-				grid-template-columns: 1fr;
-				gap: 1.8em;
-			}
-			.place-card {
-				background: var(--card-bg);
-				border-radius: 8px;
-				padding: 1.5em;
-				box-shadow: var(--box-shadow);
-				transition: transform 0.2s ease;
-			}
-			.place-card:hover {
-				transform: translateY(-3px);
-			}
-			.place-name {
-				font-size: 1.2em;
-				margin: 0 0 0.5em 0;
-				color: var(--text-color);
-				font-weight: 500;
-			}
-			.place-card p {
-				font-family: Georgia, serif;
-				margin-bottom: 0;
-			}
-			.coming-soon {
-				margin-top: 3em;
-				padding-top: 1.5em;
-				border-top: 1px solid var(--border-color);
-			}
-			.coming-soon h2 {
-				margin-bottom: 0.5em;
-				font-size: 1.4em;
-				font-weight: 500;
-			}
-			.coming-soon p {
-				color: var(--text-secondary);
-				font-family: Georgia, serif;
-			}
-			
-			@media (min-width: 640px) {
-				.places {
-					grid-template-columns: repeat(2, 1fr);
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<div class="content-container">
-				<h1 class="page-title">Destination Guides</h1>
-				<p class="intro">
-					Places I've explored during my travels since 2016, with personal insights and recommendations.
-				</p>
+<head>
+    <BaseHead title={`Destinations | ${SITE_TITLE}`} description="Curated guides to remarkable places around the world" />
+    <style>
+        .search-container {
+            margin-bottom: 2em;
+        }
 
-				{destinations.map(country => (
-					<section class="country">
-						<h2 class="country-title" id={country.country.toLowerCase().replace(/\s+/g, '-')}>{country.country}</h2>
-						<div class="places">
-							{country.places.map(place => (
-								<div class="place-card">
-									<h3 class="place-name">{place.name}</h3>
-									<p>{place.description}</p>
-								</div>
-							))}
-						</div>
-					</section>
-				))}
+        .search-input {
+            width: 100%;
+            padding: 0.8em 1em;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            background: var(--input-bg);
+            color: var(--text-color);
+        }
 
-				<div class="coming-soon">
-					<h2>More Destinations Coming Soon</h2>
-					<p>I'm constantly exploring new places and will be adding more destinations from my travels across Southeast Asia and beyond.</p>
-				</div>
-			</div>
-		</main>
-		<Footer />
-	</body>
+        .stats {
+            margin-bottom: 1em;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .show-more {
+            display: block;
+            width: 100%;
+            padding: 0.8em;
+            margin-top: 1em;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .show-more:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .content-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            margin-bottom: 0.5em;
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+
+        .intro {
+            margin-bottom: 2.5em;
+            color: var(--text-secondary);
+            font-family: Georgia, serif;
+        }
+
+        .country {
+            margin-bottom: 3em;
+        }
+
+        .country-title {
+            margin-bottom: 1.2em;
+            font-size: 1.4em;
+            font-weight: 500;
+            color: var(--text-color);
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .places {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.8em;
+        }
+
+        .place-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5em;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.2s ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .place-name {
+            font-size: 1.2em;
+            margin: 0 0 0.5em 0;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .place-card p {
+            font-family: Georgia, serif;
+            margin-bottom: 0;
+        }
+
+        .coming-soon {
+            margin-top: 3em;
+            padding-top: 1.5em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 0.5em;
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+
+        .coming-soon p {
+            color: var(--text-secondary);
+            font-family: Georgia, serif;
+        }
+
+        @media (min-width: 640px) {
+            .places {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<Header />
+<main>
+    <div class="content-container">
+        <h1 class="page-title">Destination Guides</h1>
+        <div class="stats">
+            Explored {totalDestinations} unique destinations across {destinations.length} countries
+        </div>
+        <p class="intro">
+            Places I've explored during my travels since 2016, with personal insights and recommendations.
+        </p>
+        <div class="search-container">
+            <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search destinations..."
+                    id="search-input"
+            />
+        </div>
+
+        {destinations.map(country => {
+            const showMoreId = `show-more-${country.country.toLowerCase().replace(/\s+/g, '-')}`;
+            return (
+                    <section class="country" data-country={country.country}>
+                        <h2 class="country-title" id={country.country.toLowerCase().replace(/\s+/g, '-')}>{country.country}</h2>
+                        <div class="places">
+                            {country.places.map(place => (
+                                    <div class="place-card" data-name={place.name.toLowerCase()}>
+                                        <h3 class="place-name">{place.name}</h3>
+                                        <p>{place.description}</p>
+                                    </div>
+                            ))}
+                        </div>
+                    </section>
+            );
+        })}
+
+        <div class="coming-soon">
+            <h2>More Destinations Coming Soon</h2>
+            <p>I'm constantly exploring new places and will be adding more destinations from my travels across Southeast Asia and beyond.</p>
+        </div>
+    </div>
+</main>
+<Footer />
+</body>
+<script>
+    // Client-side search functionality
+    const searchInput = document.getElementById('search-input');
+    const countries = document.querySelectorAll('.country');
+
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        filterDestinations(searchTerm);
+    });
+
+    function filterDestinations(searchTerm) {
+        countries.forEach(country => {
+            const countryName = country.dataset.country.toLowerCase();
+            const places = country.querySelectorAll('.place-card');
+            let hasVisiblePlaces = false;
+
+            places.forEach(place => {
+                const placeName = place.dataset.name;
+                const isVisible = placeName.includes(searchTerm) || countryName.includes(searchTerm);
+                place.style.display = isVisible ? 'block' : 'none';
+                if (isVisible) hasVisiblePlaces = true;
+            });
+
+            country.style.display = hasVisiblePlaces ? 'block' : 'none';
+        });
+    }
+
+
+</script>
 </html>

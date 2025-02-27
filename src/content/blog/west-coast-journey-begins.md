@@ -9,7 +9,7 @@ Hi! My name is Pallav.
 
 I recently completed a two months long ride on west coast of India (Woop woop 🥳). This article and the coming few articles will be my diary entry for the past two months, so please treat it like one.
 
-I will try to be as descriptive as possible and if you have any comments, questions, doubts, complaints, appreciation or anything else, do leave a comment below or ping me on [Instagram](https://www.instagram.com/pallav_jha26/).
+I will try to be as descriptive as possible and if you have any comments, questions, doubts, complaints, appreciation or anything else, do leave a comment below or ping me on [Instagram](https://instagram.com).
 
 ## The Genesis
 
