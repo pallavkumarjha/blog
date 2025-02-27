@@ -4,6 +4,9 @@
 import '../styles/global.css';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
 
+import { ViewTransitions } from 'astro:transitions';
+import Analytics from './Analytics.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -70,6 +73,8 @@ const imageUrl = new URL(image, Astro.site).toString();
 
 <!-- Theme color for browser -->
 <meta name="theme-color" content="#ff5a5f" />
+<ViewTransitions />
+<Analytics />
 
 <!-- Script to apply saved theme before page load to prevent flash -->
 <script is:inline>
