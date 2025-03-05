@@ -1,5 +1,5 @@
 ---
-title: "Planning the West Coast Journey"
+title: "#2 Planning the West Coast Journey"
 description: "A detailed breakdown of planning a two-month solo bike ride along India's west coast, covering budget, route planning, and preparation."
 pubDate: "2022-04-20"
 author: "Pallav"
@@ -18,7 +18,15 @@ After securing permission and ensuring I had a capable bike, the next step was f
 
 I added a buffer of ₹200 per day for unexpected expenses. For the two-month journey, the total budget came to less than ₹1,00,000 including fuel costs. I set aside ₹1,20,000 as a worst-case scenario fund to cover potential bike breakdowns or emergencies.
 
-## Route Planning
+## 1. Introduction
+
+This article is part of my West Coast Journey series. You can follow the complete series here:
+1. [Initial Steps of My 2 Months Long Solo Bike Ride](/blog/west-coast-journey-begins)
+2. Planning the West Coast Journey (Current)
+3. [Day 1: Beginning the Journey](/blog/day-1-beginning-the-journey)
+4. [Ride to the Starting Point: Madurai to Kanyakumari](/blog/ride-to-starting-point)
+
+## 2. Route Planning
 
 For the west coast route, I planned to start from Kanyakumari and head north. Here's my planned itinerary:
 

@@ -1,5 +1,5 @@
 ---
-title: "Initial Steps of My 2 Months Long Solo Bike Ride on West Coast of India"
+title: "#1 Initial Steps of My 2 Months Long Solo Bike Ride on West Coast of India"
 description: "The beginning of an epic two-month journey along India's west coast - from planning and preparation to convincing parents and taking the first steps towards adventure."
 pubDate: "Jan 15 2024"
 ---
@@ -11,13 +11,19 @@ I recently completed a two months long ride on west coast of India (Woop woop ðŸ
 
 I will try to be as descriptive as possible and if you have any comments, questions, doubts, complaints, appreciation or anything else, do leave a comment below or ping me on [Instagram](https://instagram.com).
 
-## The Genesis
+This is the first article in a series about my journey. You can follow the series here:
+1. Initial Steps of My 2 Months Long Solo Bike Ride (Current)
+2. [Planning the West Coast Journey](/blog/planning-west-coast-journey)
+3. [Day 1: Beginning the Journey](/blog/day-1-beginning-the-journey)
+4. [Ride to the Starting Point: Madurai to Kanyakumari](/blog/ride-to-starting-point)
+
+## 1. The Genesis
 
 The first thought of me going on a long bike ride occurred to me when I had to change cities (Noida to Bengaluru). I planned the entire route, where I would stop, which route to follow, what places to visit and what not.
 
 Guess what, the plan went down the drain because of third wave of covid. I had to take a flight and change cities. Next thing I know I got covid. After recovering from it, the only thing I wanted to do was get on my bike and ride to some place. I had never done long rides (+350km) in the past so I wanted to test my stamina.
 
-## Testing the Waters
+## 2. Testing the Waters
 
 I took my bike next weekend and went on a long ride. It was a tiring day but I was able to manage somewhere close to 420km.
 
@@ -27,7 +33,7 @@ Next thing I know I was planning to go to Pondicherry, and figuring out where to
 
 I had almost finalised everything and then I thought if I can do a week I can probably do a month, so why not plan for that. From there I started planning for this long ride.
 
-## The Parent Challenge
+## 3. The Parent Challenge
 
 I knew that I could take on this challenge because I had some experience of solo budget traveling, so I had to address other challenges. First and foremost was getting permission from parents.
 
@@ -57,7 +63,7 @@ I am an adult. My parents have to understand that, and I have to understand that
 
 Read that line again.
 
-## What's Next?
+## 4. What's Next?
 
 In the next article, I would write about how I actually planned this long ride in budget.
 
