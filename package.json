@@ -13,18 +13,6 @@
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.2.5",
-    "zwitch": "^2.0.4",
-    "hast-util-raw": "^9.0.1"
-  },
-  "overrides": {
-    "zwitch": {
-      "exports": {
-        ".": {
-          "import": "./index.js",
-          "require": "./index.js"
-        }
-      }
-    }
+    "astro": "^5.2.5"
   }
 }
