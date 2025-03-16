@@ -269,9 +269,9 @@ const totalDestinations = destinations.reduce((acc, country) => acc + country.pl
         filterDestinations(searchTerm);
     });
 
-    function filterDestinations(searchTerm) {
+    function filterDestinations(searchTerm: any) {
         countries.forEach(country => {
-            const countryName = country.dataset.country.toLowerCase();
+            const countryName = country?.dataset.country.toLowerCase();
             const places = country.querySelectorAll('.place-card');
             let hasVisiblePlaces = false;
 
