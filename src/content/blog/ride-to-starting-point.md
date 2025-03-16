@@ -1,7 +1,7 @@
 ---
 title: "#4 Ride to the Starting Point: Madurai to Kanyakumari"
 description: "A journey from Madurai to Kanyakumari, featuring an unexpected visit to Meenakshi Temple, memorable encounters, and the anticipation of reaching India's southernmost point."
-pubDate: "2022-02-12"
+pubDate: "Mar 06 2023"
 author: "Pallav"
 readingTime: "4 min read"
 ---

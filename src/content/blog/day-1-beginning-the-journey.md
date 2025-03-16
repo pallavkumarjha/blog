@@ -1,7 +1,7 @@
 ---
 title: "#3 Day 1: Beginning the Journey"
 description: "The first day of my solo motorcycle journey from Bengaluru to Madurai, filled with initial fears, memorable encounters, and the thrill of the open road."
-pubDate: "2022-02-11"
+pubDate: "Apr 30 2022"
 author: "Pallav"
 readingTime: "5 min read"
 ---

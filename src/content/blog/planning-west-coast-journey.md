@@ -1,7 +1,7 @@
 ---
 title: "#2 Planning the West Coast Journey"
 description: "A detailed breakdown of planning a two-month solo bike ride along India's west coast, covering budget, route planning, and preparation."
-pubDate: "2022-04-20"
+pubDate: "Apr 20 2022"
 author: "Pallav"
 readingTime: "3 min read"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "#13 A Punctured Adventure: My Journey to Mumbai"
 description: "An eventful journey from Pune to Mumbai, featuring unexpected tire troubles, navigation through construction chaos, and memorable encounters at a vibrant hostel."
-pubDate: "Mar 5 2025"
+pubDate: "Mar 1 2025"
 author: "Pallav"
 readingTime: "6 min read"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "#14 The Northern Turn: My Surat Chapter"
 description: "A journey from Mumbai to Surat, featuring unexpected traffic culture shocks, local encounters, and a quest to visit the world's tallest statue, while navigating through the city's unique challenges and experiences."
-pubDate: "Mar 25 2025"
+pubDate: "Mar 05 2025"
 author: "Pallav"
 readingTime: "8 min read"
 ---
