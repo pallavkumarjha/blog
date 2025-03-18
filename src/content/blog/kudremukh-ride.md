@@ -53,7 +53,7 @@ The walk back was unexpectedly challenging - an uphill trek that had me regr
 ### An Unexpected Friendship
 Morning brought new energy and the itch to explore. I decided to visit a nearby waterfall, firing up my V-Strom for another ride through paradise. Along the way, I spotted a solo traveler walking in the same direction. Something made me stop - perhaps the universal recognition of another soul traveling alone.
 
-> "Need a lift?"
+ "Need a lift?"
 I called out.
 
 After explaining I was headed to Soormane waterfall, he introduced himself as Atul from Himachal Pradesh. Recently relocated to Bangalore, this was his first solo adventure in the south. There's something about motorcycles and mountains that breaks down barriers - within minutes, we were talking like old friends.
@@ -81,7 +81,7 @@ As dinner wound down, he casually asked if we'd like to join him for a trek the 
 
 Dawn found us ready for adventure, dew still clinging to tall grass as we began our climb at 6:30 AM. The path was steep and unforgiving, especially for my desk-job legs. While Atul and our guide bounded upward like mountain goats, I puffed behind them, grateful for their patience as they waited for me at various points.
 
-> "Like a tortoise," 
+ "Like a tortoise," 
 
 I joked about myself, though there was nothing slow about the beating of my heart.
 
@@ -106,7 +106,7 @@ The descent brought its own challenges - dewy grass creating nature's slip-a
 
 Our guide's final act of hospitality was an invitation to his modest home, where hot tea never tasted so good. When Atul tried to offer a small token of appreciation with the words, 
 
-> "We came to your house for the first time and didn't even bring sweets, this is a small gift from us"
+ "We came to your house for the first time and didn't even bring sweets, this is a small gift from us"
 
 Our guide refused with gentle indignation. Instead, he asked for our contact details "for when I visit Bangalore." In an age of transactional tourism, his genuine connection to travelers felt like a precious artifact from another time.
 
