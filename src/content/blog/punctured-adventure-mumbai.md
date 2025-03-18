@@ -13,6 +13,13 @@ tags:
   - hostel-life
 ---
 
+<Image
+  src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*wp5nzn2LWwtXhlN4otmLjA.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
+
 ## The Unexpected Beginning
 
 After six weeks of cruising along India's western coastline, I was eager to continue my motorcycle adventure from Pune to Mumbai. The morning held promise — clear skies, my trusty bike prepped and ready, and the excitement of exploring Maharashtra's crown jewel. Little did I know that my journey would begin with an unexpected hiccup.
@@ -40,6 +47,13 @@ For the next three days, I enjoyed exploring the surrounding areas. One morning,
 The ride from Kalyan to Locomo Hostel tested my patience like nothing else on my six-week journey. What should have been a 60-kilometer trip stretched into a three-hour ordeal through Mumbai's unforgiving traffic. The last kilometer alone took 45 minutes to navigate — a perfect microcosm of Mumbai's traffic situation.
 
 During this crawl through congested streets, I found myself alongside an older gentleman on a scooter. We chatted briefly about the traffic, the weather, and the general state of Mumbai's roads. Before filtering ahead, he offered a simple "all the best for your journey" — a small encouragement that somehow made the remaining traffic more bearable.
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9-mXyCJYOAjjSeEbnh_wJQ.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
 
 ## Locomo Hostel: A Rider's Haven
 
@@ -74,6 +88,13 @@ Mumbai's food scene offered mixed experiences. Near CST station, I discovered de
 Before departing for Surat — the next stop on my west coast tour — I attempted a food pilgrimage for Mumbai's famous pav bhaji. Unfortunately, the recommended place had either moved or closed, leaving me with an unfulfilled culinary quest. Sometimes, even the best-planned adventures leave loose ends that beckon you to return someday.
 
 In the quietness of my hostel dorm that last night, reflecting on my Mumbai experience, I realized how the initial tire puncture had set the tone for my entire stay — unexpected, occasionally frustrating, but ultimately revealing the city's character through its challenges rather than despite them.
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kUsBsAwRbLdwxis4BZhCvA.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
 
 ## An Invitation to Fellow Riders
 
