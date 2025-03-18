@@ -4,6 +4,13 @@ description: "A journey from Madurai to Kanyakumari, featuring an unexpected vis
 pubDate: "Mar 06 2023"
 author: "Pallav"
 readingTime: "4 min read"
+slug: "/posts/ride-to-starting-point"
+tags:
+  - travel
+  - motorcycle
+  - temples
+  - madurai
+  - kanyakumari
 ---
 
 This article is the continuation of [last](/blog/day-1-beginning-the-journey) article, so if you are unaware of my background, do give it a read.

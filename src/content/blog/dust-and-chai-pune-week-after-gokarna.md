@@ -4,6 +4,13 @@ description: "A challenging 585-kilometer motorcycle journey from Gokarna to Pun
 pubDate: "Feb 25 2025"
 author: "Pallav"
 readingTime: "7 min read"
+slug: "/posts/dust-chai-pune"
+tags:
+  - travel
+  - motorcycle
+  - pune
+  - hill-stations
+  - long-rides
 ---
 
 ## The Long Haul

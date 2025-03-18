@@ -4,6 +4,13 @@ description: "A journey from Kanyakumari to Kochi, exploring the contrasts betwe
 pubDate: "Apr 27 2024"
 author: "Pallav"
 readingTime: "3 min read"
+slug: "/posts/rediscovering-kochi"
+tags:
+  - travel
+  - motorcycle
+  - kerala
+  - kochi
+  - fort-kochi
 ---
 
 After leaving Kanyakumari on my bike, I set out for Kochi. This place brought back past memories. This is the place where I first rode a two-wheeler and explored parts of Kerala(Allepey and Munnar). This is also where I had a crazy scooter mishap but came out unscathed, unlike my friend who got a tiny scratch on his knee. He still teases me about it, saying I jinxed his beach plans!

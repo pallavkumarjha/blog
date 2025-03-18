@@ -4,6 +4,13 @@ description: "A detailed exploration of Kanyakumari's lesser-known beaches, land
 pubDate: "Apr 20 2024"
 author: "Pallav"
 readingTime: "5 min read"
+slug: "/posts/kanyakumari-hidden-gems"
+tags:
+  - travel
+  - motorcycle
+  - beaches
+  - kanyakumari
+  - cafés
 ---
 
 This article continues my exploration of Kanyakumari, following my [previous post](/blog/exploring-kanyakumari) about initial impressions and discovering hidden spots.

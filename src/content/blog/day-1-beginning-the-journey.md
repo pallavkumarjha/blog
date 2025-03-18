@@ -4,6 +4,13 @@ description: "The first day of my solo motorcycle journey from Bengaluru to Madu
 pubDate: "Apr 30 2022"
 author: "Pallav"
 readingTime: "5 min read"
+slug: "/posts/day-1-beginning-journey"
+tags:
+  - travel
+  - motorcycle
+  - solo-travel
+  - encounters
+  - madurai
 ---
 
 This article is the continuation of [last](/blog/planning-west-coast-journey) article, so if you are unaware of my background, do give it a read.

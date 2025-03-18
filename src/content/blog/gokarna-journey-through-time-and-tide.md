@@ -4,6 +4,13 @@ description: "A soulful exploration of Gokarna's beaches, featuring unexpected f
 pubDate: "Feb 19 2025"
 author: "Pallav"
 readingTime: "6 min read"
+slug: "/posts/gokarna-journey"
+tags:
+  - travel
+  - motorcycle
+  - beaches
+  - gokarna
+  - friendship
 ---
 
 ## The Arrival

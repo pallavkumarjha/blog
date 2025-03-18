@@ -4,6 +4,13 @@ description: "A detailed exploration of Kochi's attractions, from the iconic Chi
 pubDate: "May 5 2024"
 author: "Pallav"
 readingTime: "5 min read"
+slug: "/posts/exploring-kochi"
+tags:
+  - travel
+  - kerala
+  - kochi
+  - attractions
+  - local-cuisine
 ---
 
 ## Evening at the Chinese Fishing Nets

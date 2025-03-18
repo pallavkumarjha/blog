@@ -4,6 +4,13 @@ description: "A journey through Mangalore's hidden beaches, featuring unique acc
 pubDate: "May 12 2024"
 author: "Pallav"
 readingTime: "5 min read"
+slug: "/posts/mangalore-beaches-hitchhiking"
+tags:
+  - travel
+  - motorcycle
+  - beaches
+  - mangalore
+  - hitchhiking
 ---
 
 ## The Long Road to Mangalore

@@ -4,6 +4,13 @@ description: "A serene early morning kayaking adventure in Mulki, featuring sunr
 pubDate: "May 19 2024"
 author: "Pallav"
 readingTime: "4 min read"
+slug: "/posts/kayaking-in-mulki"
+tags:
+  - travel
+  - water-sports
+  - kayaking
+  - mulki
+  - sunrise
 ---
 
 ## The Discovery

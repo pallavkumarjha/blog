@@ -2,6 +2,13 @@
 title: "#1 Initial Steps of My 2 Months Long Solo Bike Ride on West Coast of India"
 description: "The beginning of an epic two-month journey along India's west coast - from planning and preparation to convincing parents and taking the first steps towards adventure."
 pubDate: "Apr 12 2022"
+slug: "/posts/west-coast-journey-begins"
+tags:
+  - travel
+  - motorcycle
+  - planning
+  - preparation
+  - solo-travel
 ---
 
 

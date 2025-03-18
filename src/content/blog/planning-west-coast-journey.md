@@ -4,6 +4,13 @@ description: "A detailed breakdown of planning a two-month solo bike ride along 
 pubDate: "Apr 20 2022"
 author: "Pallav"
 readingTime: "3 min read"
+slug: "/posts/planning-west-coast-journey"
+tags:
+  - travel
+  - motorcycle
+  - planning
+  - budget
+  - route
 ---
 
 This article is a continuation of my previous post about embarking on a solo motorcycle journey along India's west coast. If you're unfamiliar with my background, I recommend checking out the previous article first.
@@ -74,7 +81,6 @@ All luggage was secured to the bike using bungee cords, and with that, I was rea
 Stay tuned for the next article where I'll share the experiences from day one of this incredible journey.
 
 ---
-
 
 If you enjoyed this article or found it helpful, please let me know on [Instagram](https://www.instagram.com/pallav_jha26/). Feel free to share it with others who might find it interesting.
 

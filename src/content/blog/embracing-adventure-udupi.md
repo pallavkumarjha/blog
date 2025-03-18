@@ -4,6 +4,13 @@ description: "A vibrant journey from Mangalore to Udupi, featuring unexpected en
 pubDate: "Feb 12 2025"
 author: "Pallav"
 readingTime: "4 min read"
+slug: "/posts/embracing-adventure-udupi"
+tags:
+  - travel
+  - motorcycle
+  - udupi
+  - st-marys-island
+  - accidents
 ---
 
 ## The Journey Begins

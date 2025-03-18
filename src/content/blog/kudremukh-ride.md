@@ -1,9 +1,16 @@
 ---
-title: "My Solo Ride to Kudremukh National Park"
-description: "Leaning Into Curves: A Motorcyclist's Tale of Friendship and Adventure in the Western Ghats"
+title: "My Solo Ride to Kudremukh National Park"
+description: "Leaning Into Curves: A Motorcyclist's Tale of Friendship and Adventure in the Western Ghats"
 pubDate: "Mar 16 2025"
 author: "Pallav"
 readingTime: "7 min read"
+slug: "/posts/kudremukh-ride"
+tags:
+  - travel
+  - motorcycle
+  - national-park
+  - western-ghats
+  - trekking
 ---
 
 There's something deeply liberating about hitting the open road on two wheels, with nothing but your thoughts and the endless horizon for company. This is the story of how I set out alone on my Suzuki V-Strom SX toward Kudremukh National Park, only to discover that sometimes the best journeys bring unexpected companions.

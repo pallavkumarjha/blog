@@ -4,6 +4,13 @@ description: "A Motorcycle Journey Through Construction Zones, Crowded Beaches, 
 pubDate: "Mar 08 2025"
 author: 'Pallav'
 readingTime: "6 min read"
+slug: "/posts/north-goa-experience"
+tags:
+  - travel
+  - motorcycle
+  - beaches
+  - goa
+  - friendship
 ---
 
 ## The Troubled Journey: Mumbai to Goa

@@ -4,6 +4,13 @@ description: "A journey through the southernmost tip of India, from initial disa
 pubDate: "May 15 2023"
 author: "Pallav"
 readingTime: "4 min read"
+slug: "/posts/exploring-kanyakumari"
+tags:
+  - travel
+  - motorcycle
+  - beaches
+  - kanyakumari
+  - hidden-gems
 ---
 
 This article is the continuation of my [previous post](/blog/ride-to-starting-point) about reaching Kanyakumari. If you haven't read it yet, I recommend checking it out first.

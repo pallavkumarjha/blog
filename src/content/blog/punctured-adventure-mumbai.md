@@ -4,6 +4,13 @@ description: "An eventful journey from Pune to Mumbai, featuring unexpected tire
 pubDate: "Mar 1 2025"
 author: "Pallav"
 readingTime: "6 min read"
+slug: "/posts/punctured-adventure-mumbai"
+tags:
+  - travel
+  - motorcycle
+  - mumbai
+  - repairs
+  - hostel-life
 ---
 
 ## The Unexpected Beginning

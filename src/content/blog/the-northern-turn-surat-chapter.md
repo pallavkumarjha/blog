@@ -4,6 +4,13 @@ description: "A journey from Mumbai to Surat, featuring unexpected traffic cultu
 pubDate: "Mar 05 2025"
 author: "Pallav"
 readingTime: "8 min read"
+slug: "/posts/northern-turn-surat-chapter"
+tags:
+  - travel
+  - motorcycle
+  - surat
+  - statue-of-unity
+  - city-exploration
 ---
 
 ## Setting Out from Mumbai
