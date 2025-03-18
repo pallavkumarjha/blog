@@ -1,5 +1,5 @@
 ---
-title: "The South Goa Escape"
+title: "#17 The South Goa Escape"
 description: "Quiet Beaches, Cold Water Fears, and a way back home"
 pubDate: "Mar 12 2025"
 draft: false
@@ -73,6 +73,13 @@ Back at Shetty uncle's stall, I had breakfast, packed my luggage, and hit the ro
 As I reached the outskirts of the city, the sun began to dip below the horizon. My house was just 2 kilometers away when it hit me - the sheer magnitude of what I'd accomplished. Tears welled up, a mix of exhaustion, happiness, and pride. I had done it.
 
 When I finally pulled into my driveway, I was greeted by my bhaiya and bhabhi, their smiles wide and welcoming. Home had never felt sweeter.
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*wFVe-Jo_gDznfG7hnuEpBA.png"
+  alt="Kudremukh National Park - A view of the mountains and lush greenery"
+  width={700}
+  height={400}
+/>
 
 This was the last article in the series of articles, I hope you enjoyed the series. For any questions, feedback or anything, please let me know in the comments or on Instagram [Instagram](https://instagram.com), Feel free to share it with others who might find it interesting. Here is a list of all the previous articles
 
