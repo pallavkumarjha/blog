@@ -1,5 +1,5 @@
 ---
-title: "#11 Gokarna: A Journey Through Time and Tide"
+title: "#12 Gokarna: A Journey Through Time and Tide"
 description: "A soulful exploration of Gokarna's beaches, featuring unexpected friendships, motorcycle adventures, and the perfect blend of solitude and connection at hidden coastal gems."
 pubDate: "Feb 19 2025"
 author: "Pallav"

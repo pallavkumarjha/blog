@@ -1,5 +1,5 @@
 ---
-title: "#12 Dust and Chai: A Pune Week After Gokarna"
+title: "#13 Dust and Chai: A Pune Week After Gokarna"
 description: "A challenging 585-kilometer motorcycle journey from Gokarna to Pune, followed by explorations of historic hills, serene dams, and mountain getaways, blending adventure with moments of unexpected connection."
 pubDate: "Feb 25 2025"
 author: "Pallav"

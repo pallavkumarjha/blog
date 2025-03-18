@@ -7,7 +7,6 @@ readingTime: "7 min read"
 ---
 
 There's something deeply liberating about hitting the open road on two wheels, with nothing but your thoughts and the endless horizon for company. This is the story of how I set out alone on my Suzuki V-Strom SX toward Kudremukh National Park, only to discover that sometimes the best journeys bring unexpected companions.
-If you are not a paid user but would still like to read the article please, head on to this link.
 
 <Image
   src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*98R1mo3ncPdqKzo8Tk8z_g.jpeg"

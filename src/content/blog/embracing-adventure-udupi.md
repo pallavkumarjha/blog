@@ -1,5 +1,5 @@
 ---
-title: "#10 Embracing Adventure: A Journey Through Udupi and Beyond"
+title: "#11 Embracing Adventure: A Journey Through Udupi and Beyond"
 description: "A vibrant journey from Mangalore to Udupi, featuring unexpected encounters, peaceful moments by the sea, newfound friendships, and an unforgettable adventure to St. Mary's Island."
 pubDate: "Feb 12 2025"
 author: "Pallav"

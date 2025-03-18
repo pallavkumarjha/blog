@@ -1,5 +1,5 @@
 ---
-title: "#9 Kayaking in Mulki"
+title: "#10 Kayaking in Mulki"
 description: "A serene early morning kayaking adventure in Mulki, featuring sunrise views, jellyfish encounters, and heartwarming conversations with a surf instructor from Uttar Pradesh."
 pubDate: "May 19 2024"
 author: "Pallav"

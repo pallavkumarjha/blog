@@ -1,7 +1,7 @@
 ---
 title: "#6 Discovering Kanyakumari: Hidden Gems and Café Delight"
 description: "A detailed exploration of Kanyakumari's lesser-known beaches, landmarks, and a special café that became a home away from home, featuring unique travel experiences and local connections."
-pubDate: "Apr 28 2024"
+pubDate: "Apr 20 2024"
 author: "Pallav"
 readingTime: "5 min read"
 ---
