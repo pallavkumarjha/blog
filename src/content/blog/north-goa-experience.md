@@ -72,8 +72,8 @@ As I packed up to leave North Goa, I couldn't help but feel that the place hadn'
 
 ---
 
-If you enjoyed this article or found it helpful, please let me know in the comments or on [Instagram](https://instagram.com), Feel free to share it with others who might find it interesting. Here is a list of all the previous articles
+If you enjoyed this article or found it helpful, please let me know in the comments or on [Instagram](https://www.instagram.com/pallav_jha26/), Feel free to share it with others who might find it interesting. Here is a list of all the previous articles
 
-You can also support my work by buying me a coffee on [BuyMeACoffee](https://buymeacoffee.com) which helps me continue to create valuable content like this. Cheers!
+You can also support my work by buying me a coffee on [BuyMeACoffee](https://buymeacoffee.com/pallavjha) which helps me continue to create valuable content like this. Cheers!
 
 Chao !

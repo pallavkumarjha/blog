@@ -1,14 +1,16 @@
 ---
 title: "#17 The South Goa Escape"
-description: "Quiet Beaches, Cold Water Fears, and a way back home"
-pubDate: "Mar 12 2025"
-draft: false
+description: "Finding peace and nostalgia on familiar roads, revisiting the coastal highway that once carried me north"
+pubDate: "Mar 16 2025"
+author: "Pallav"
+readingTime: "4 min read"
 slug: "/posts/south-goa-escape"
 tags:
   - travel
   - motorcycle
   - beaches
-  - goa
+  - south-goa
+  - reflection
 ---
 
 <Image
@@ -76,13 +78,15 @@ When I finally pulled into my driveway, I was greeted by my bhaiya and bhabhi, t
 
 <Image
   src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*wFVe-Jo_gDznfG7hnuEpBA.png"
-  alt="Kudremukh National Park - A view of the mountains and lush greenery"
+  alt="Trip expenses"
   width={700}
   height={400}
 />
 
-This was the last article in the series of articles, I hope you enjoyed the series. For any questions, feedback or anything, please let me know in the comments or on Instagram [Instagram](https://instagram.com), Feel free to share it with others who might find it interesting. Here is a list of all the previous articles
+---
 
-You can also support my work by buying me a coffee on [BuyMeACoffee](https://buymeacoffee.com) which helps me continue to create valuable content like this. Cheers!
+If you enjoyed this article or found it helpful, please let me know on [Instagram](https://www.instagram.com/pallav_jha26/). Feel free to share it with others who might find it interesting. Check previous articles in this series [here](/blog).
 
-Chao !
+You can also support my work by [buying me a coffee](https://buymeacoffee.com/pallavjha) which helps me continue to create valuable content like this. Cheers!
+
+Chao!
