@@ -13,6 +13,13 @@ tags:
   - city-exploration
 ---
 
+<Image
+  src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*vjyk7Aqcx3Z2dVkHrBygvA.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
+
 ## Setting Out from Mumbai
 
 The morning was cool as I packed up my things at the Mumbai hostel. After saying goodbye to Uday, I kicked my bike to life and started the journey to Surat. The roads were clear this early, and I felt optimistic about making good time.
@@ -22,6 +29,13 @@ Two hours into the ride, my eyes grew heavy. The road ahead blurred, and I knew 
 "Just a quick break," I told myself, pulling into a small roadside dhaba. The aroma of fresh food made me realize I was hungry too.
 
 "One coffee, please. Make it strong," I said to the weathered man behind the counter. As I sipped the hot, bitter brew, I checked my trip meter and smiled. I had just crossed 5,000 kilometers on this journey! I took a deep breath, feeling a surge of pride at how far I'd come in just six weeks.
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*M3WLxJWEYn1yij8H8DuxBg.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
 
 ## Welcome to Surat: Culture Shock
 
@@ -46,6 +60,13 @@ My jaw dropped. Walking back to my room, I passed an open door where I could cle
 Too hot to remain in my room, I decided to explore the city. I walked to Maharana Pratap Udyan park, which bustled with families enjoying their weekend. Children darted about while parents relaxed on benches, everyone seeming content to be outdoors.
 
 A food vendor caught my attention, selling masala aloo for just 10 rupees. The spicy potatoes scorched my tongue but tasted incredible. As dusk approached, I caught a cab back to my hotel, my legs weary from walking all day.
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*HR2Cf-cMfVylU1VeG7N3Hw.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
 
 The next morning, hoping to find a beautiful coastline like in Mumbai, I rode to a nearby beach. What I discovered was nothing like the beaches I'd seen on my trip so far. The sand was littered with debris, the water murky, and the entire place had a melancholy, neglected atmosphere.
 
@@ -73,6 +94,13 @@ That night, I decided to compensate for the expensive lunch by taking advantage 
 
 ## The Statue of Unity: A Journey Within a Journey
 
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yaBgL8Yl8k6suZpz7C_45g.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
+
 The primary reason I had added Surat to my itinerary was to visit the renowned Statue of Unity nearby. I woke early, excited to see the world's tallest statue. The morning air felt invigorating against my face as I rode out of the city. The roads began smooth but deteriorated halfway there.
 
 By 9 AM, I reached the visitor center, parked my bike, and purchased a 380-rupee ticket. Little did I know the adventure was just beginning! I queued for 30 minutes waiting for the air-conditioned bus to transport us to the actual statue. First, I had to check my helmet at a cloakroom, then at the security checkpoint, they refused to let me bring my laptop inside.
@@ -94,6 +122,13 @@ After exploring the statue, I retrieved my laptop and spotted a Starbucks café.
 The café had just one charging point, and I needed to take a work call. To my surprise, a young couple noticed me searching and beckoned me over.
 
 "You can use this outlet," they offered, rearranging their belongings to make space for me. "We're finished charging."
+
+<Image
+  src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mWdb_q8677xOj1I1fwwPmw.jpeg"
+  alt="Trip expenses"
+  width={700}
+  height={400}
+/>
 
 I ordered a coffee and settled in for my meeting. Later, famished from all the walking, I tried a paneer wrap that proved to be delicious. As the afternoon crowd thinned, a barista approached me.
 
