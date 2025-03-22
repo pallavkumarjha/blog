@@ -14,7 +14,12 @@ tags:
   - librart
 ---
 
-# The Forgotten Magic of Fiction: Rediscovering Stories in a Non-fiction World
+<Image
+  src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*NS2HY6Wgo5r1rxNmHjvH_w.jpeg"
+  alt="Kudremukh National Park - A view of the mountains and lush greenery"
+  width={700}
+  height={400}
+/>
 
 It happened on a lazy Sunday afternoon. I was sitting in my little home library, feeling kind of "blah" and looking for something to lift my spirits. As I scanned my shelves, something struck me – where had all my fiction gone? Somehow, over the years, my collection had transformed into shelves dominated by self-help, business, and personal development books. The colorful novels that once transported me to different worlds had been quietly replaced by practical guides promising to improve my productivity and life skills.
 
